@@ -11,5 +11,6 @@ import { AppModule } from "./app/app.module";
 // A NativeScript Angular app needs to make both paradigms work together,
 // so we provide a wrapper platform object, platformNativeScriptDynamic,
 // that sets up a NativeScript application and can bootstrap the Angular framework.
-// platformNativeScriptDynamic({ async: true, launchView: new LaunchAnimation() }).bootstrapModule(AppModule);
-platformNativeScriptDynamic().bootstrapModule(AppModule);
+platformNativeScriptDynamic({
+    async: true, launchView: new LaunchAnimation() }).bootstrapModule(AppModule);
+// platformNativeScriptDynamic().bootstrapModule(AppModule);

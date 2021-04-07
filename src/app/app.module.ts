@@ -34,11 +34,11 @@ export function asyncBoot(): Function {
         AppDrawerComponent
     ],
     providers: [
-    // {
-    //     provide: APP_INITIALIZER,
-    //     useFactory: asyncBoot,
-    //     multi: true
-    // }
+    {
+        provide: APP_INITIALIZER,
+        useFactory: asyncBoot,
+        multi: true
+    }
     ],
     schemas: [
         NO_ERRORS_SCHEMA
